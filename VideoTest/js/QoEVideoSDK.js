@@ -1,5 +1,5 @@
 
-
+//hasaki
 var media_events = new Array();
 media_events["loadstart"] = 0;
 media_events["progress"] = 0;
