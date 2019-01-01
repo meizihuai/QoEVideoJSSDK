@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/QoEVideoSDK.js" type="text/javascript" charset="utf-8"></script>
+		<title>VideoTest</title>
+	</head>
+
+	<body>
+		<div style="width:100%;height: 400px;">
+			<video id="qoeVideo" controls>
+				<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		<div id="events" style="width:100%;height: 200px;">
+
+		</div>
+		<div id="properties" style="width:100%;height: 200px;">
+ 
+		</div>
+		<div id="webm" style="width:100%;height: 200px;">
+
+		</div>
+		
+		<div id="m_video" style="width:100%;height: 200px;">
+
+		</div>
+		<script type="text/javascript">
+			//window.onload=init;
+		</script>
+		<!--<script type="text/javascript">
+			var qoeVideo;
+			var media_events = new Array();
+			media_events["loadstart"] = 0;
+			media_events["progress"] = 0;
+			media_events["suspend"] = 0;
+			media_events["abort"] = 0;
+			media_events["error"] = 0;
+			media_events["emptied"] = 0;
+			media_events["stalled"] = 0;
+			media_events["loadedmetadata"] = 0;
+			media_events["loadeddata"] = 0;
+			media_events["canplay"] = 0;
+			media_events["canplaythrough"] = 0;
+			media_events["playing"] = 0;
+			media_events["waiting"] = 0;
+			media_events["seeking"] = 0;
+			media_events["seeked"] = 0;
+			media_events["ended"] = 0;
+			media_events["durationchange"] = 0;
+			media_events["timeupdate"] = 0;
+			media_events["play"] = 0;
+			media_events["pause"] = 0;
+			media_events["ratechange"] = 0;
+			media_events["resize"] = 0;
+			media_events["volumechange"] = 0;
+			var media_properties = ["error", "src", "srcObject", "currentSrc", "crossOrigin", "networkState", "preload", "buffered", "readyState", "seeking", "currentTime", "duration",
+				"paused", "defaultPlaybackRate", "playbackRate", "played", "seekable", "ended", "autoplay", "loop", "controls", "volume",
+				"muted", "defaultMuted", "audioTracks", "videoTracks", "textTracks", "width", "height", "videoWidth", "videoHeight", "poster"
+			];
+			window.onload = init();
+
+			function init() {
+				qoeVideo = document.getElementById("qoeVideo");
+				init_events("events", media_events);
+				qoeVideo.play();
+			}
+
+			function init_events(id, arrayEventDef) {
+				var f;
+				for(key in arrayEventDef) {
+					qoeVideo.addEventListener(key, capture, false);
+				}
+				var tbody = document.getElementById(id);
+				var i = 1;
+				var tr = null;
+				for(key in arrayEventDef) {
+					if(tr == null) tr = document.createElement("tr");
+					var th = document.createElement("th");
+					th.textContent = key;
+					var td = document.createElement("td");
+					td.setAttribute("id", "e_" + key);
+					td.textContent = "0";
+					td.className = "false";
+					tr.appendChild(th);
+					tr.appendChild(td);
+					if((i++ % 5) == 0) {
+						tbody.appendChild(tr);
+						tr = null;
+					}
+				}
+				if(tr != null) tbody.appendChild(tr);
+			}
+
+			function capture(event) {
+				media_events[event.type]++;
+				console.log(event.type+"="+media_events[event.type]);
+				
+			}
+		</script>-->
+	</body>
+
+</html>
