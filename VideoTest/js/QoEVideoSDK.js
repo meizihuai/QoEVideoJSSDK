@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 //mac 2019-01-01 21:35:00
+=======
+//hasaki
+>>>>>>> 6cda9541dc9081bd181d315bb7ca9c0120772973
 var media_events = new Array();
 media_events["loadstart"] = 0;
 media_events["progress"] = 0;
