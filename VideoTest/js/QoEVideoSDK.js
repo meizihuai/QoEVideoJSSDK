@@ -1,5 +1,5 @@
 
-
+//mac 2019-01-01 21:35:00
 var media_events = new Array();
 media_events["loadstart"] = 0;
 media_events["progress"] = 0;
@@ -73,7 +73,6 @@ function init_events(id, arrayEventDef) {
         td.className = "false";
         tr.appendChild(th);
         tr.appendChild(td);
-
         if ((i++ % 5) == 0) {
             tbody.appendChild(tr);
             tr = null;
